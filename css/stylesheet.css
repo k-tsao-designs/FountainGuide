@@ -13,7 +13,7 @@ body {
 	display: block;
 	background-color: darkblue;
 	z-index: 100;
-	display: none;
+	position: relative;
 }
 #homepage-title {
 	position: absolute;
@@ -27,7 +27,7 @@ body {
 }
 
 #ambientnoise {
-	display: none;
+	/*display: none;*/
 }
 
 h1 {
@@ -58,7 +58,7 @@ h6 {
 	float: left;
 }
 
-
+/*Buttons*/
 .btnholder {
 	position: relative;
 	top: 0;
@@ -67,17 +67,129 @@ h6 {
 	height: 100%;
 	z-index: 1;
 }
+
+/*Arrows*/
 .navbtn {
 	border-radius: 50%;
 	position: fixed;
 	color: #422900;
 	font-size: 4em;
-	top: 70%;
-	left: 37%;
 	padding: 0;
 	border: none;
+
+}
+#nav-1 {
+	top: 70%;
+	left: 37%;
 	transform: rotate(345deg);
 }
+#nav-2 {
+	top: 70%;
+	left: 74%;
+	transform: rotate(350deg);
+}
+#nav-3 { /*right turn*/
+	top: 45%;
+	right: 2%;
+}
+#nav-4 { /*left turn*/
+	top: 45%; 
+	left: 2%;
+}
+#nav-5 {
+	top: 45%;
+	left: 2%;
+}
+#nav-6 {
+	top: 68%;
+	left: 39%;
+	transform: rotate(355deg);
+}
+#nav-7 {
+	top: 45%;
+	right: 2%;
+}
+#nav-8 {
+	top: 45%; 
+	left: 2%;
+}
+#nav-9 {
+	top: 72%;
+	left: 42%;
+	transform: rotate(15deg);
+}
+#nav-10 {
+	top: 45%;
+	right: 2%;
+}
+#nav-11 {
+	top: 73%;
+	left: 42%;
+	transform: rotate(356deg);
+	font-size: 3.5em;
+}
+#nav-12 {
+	top: 45%;
+	right: 2%;
+}
+#nav-13 {
+	top: 45%; 
+	left: 2%;
+}
+#nav-14 {
+	top: 45%; 
+	left: 2%;
+}
+#nav-15 {
+	top: 45%; 
+	right: 2%;
+}
+#nav-16 {
+	top: 45%; 
+	left: 2%;
+}
+#nav-17 {
+	top: 45%; 
+	left: 2%;
+}
+#nav-18 {
+	top: 45%; 
+	right: 2%;
+}
+#nav-19 {
+	top: 45%; 
+	left: 2%;
+}
+#nav-20 {
+	top: 45%; 
+	right: 2%;
+}
+#nav-21 {
+	top: 84%;
+	right: 4.5%;
+	transform: rotate(340deg);
+}
+#nav-22 {
+	top: 70%;
+	right: 24%;
+	transform: rotate(356deg);
+}
+#nav-23 {
+	top: 45%; 
+	left: 2%;
+}
+#nav-24 {
+	top: 45%; 
+	right: 2%;
+}
+#nav-25 {
+	top: 70%;
+	left: 43%;
+	transform: rotate(338deg);
+}
+
+
+/*Info Popups*/
 .infobtn {
 	background-color: white;
 	height: 25px;
@@ -88,6 +200,18 @@ h6 {
 	border-radius: 50%;
 }
 .infobtn:hover{
+	box-shadow: 0 12px 16px 0 rgba(255,255,255,.24), 0 17px 50px 0 rgba(255,255,255,0.19);
+}
+.joybtn:hover{
+	box-shadow: 0 12px 16px 0 rgba(255,255,255,.24), 0 17px 50px 0 rgba(255,255,255,0.19);
+}
+.killianbtn:hover{
+	box-shadow: 0 12px 16px 0 rgba(255,255,255,.24), 0 17px 50px 0 rgba(255,255,255,0.19);
+}
+.barbbtn:hover{
+	box-shadow: 0 12px 16px 0 rgba(255,255,255,.24), 0 17px 50px 0 rgba(255,255,255,0.19);
+}
+.dakotabtn:hover{
 	box-shadow: 0 12px 16px 0 rgba(255,255,255,.24), 0 17px 50px 0 rgba(255,255,255,0.19);
 }
 .infobtn:visited {
@@ -120,13 +244,158 @@ h6 {
 	z-index: 3;
 }
 
+.italic {
+	font-style: italic;
+}
 
 /*Info button positioning*/
+/*part2*/
 #joy-btn {
-	top: 40%;
-	left: 35%;
+	top: 42%;
+	left: 50%;
 }
-#pickle-btn {
+
+/*part4*/
+#orangepeel-btn {
+	top: 90%;
+	left: 31%;
+}
+#kitchen-btn {
+	top: 42%;
+	left: 32%;
+}
+
+/*part3*/
+#furniture-btn {
+	top: 75%;
+	left: 80.5%;
+}
+#bathroom-btn {
+	top: 50%;
+	left: 20%;
+}
+#lightbox-btn {
+	top: 52%;
+	left: 61.5%;
+}
+
+/*part5*/
+#pricing-btn {
+	top: 57%;
+	right: 2.5%;
+}
+
+/*part6*/
+#mural-btn {
+	top: 27%;
+	left: 42%;
+}
+
+/*part7*/
+#barbara-btn {
+	top: 50%;
+	left: 43%;
+}
+#fountain-btn {
+	top: 21%;
+	left: 53.5%;
+}
+#martini-btn {
+	top: 23%;
+	left: 14%;
+}
+
+/*part8 is transition screen*/
+
+/*part9*/
+#picklesoup-btn {
 	top: 60%;
 	left: 20%;
 }
+#maltmistake-btn {
+	top: 50%;
+	left: 60%;
+}
+
+/*part10*/
+#soaphospital-btn {
+	top: 44.5%;
+	left: 34.5%;
+}
+
+/*part11*/
+#birthday-btn {
+	top: 23%;
+	left: 60%;
+}
+#drinkid-btn {
+	top: 50%;
+	left: 59.5%;
+}
+#cedarcrest-btn {
+	top: 61.5%;
+	right: 10%;
+}
+
+/*part12*/
+#beefmelt-btn {
+	top: 47%;
+	left: 30%;
+}
+#chili-btn {
+	top: 74%;
+	left: 70%;
+}
+
+/*part13*/
+#marriage-btn {
+	top: 65%;
+	right: 13%;
+}
+#tourism-btn {
+	top: 68%;
+	left: 32%;
+}
+
+/*part14*/
+#goodpeople-btn {
+	top: 63%;
+	left: 80%;
+}
+#lampshade-btn {
+	top: 14%;
+	left: 16%;
+}
+
+/*part15*/
+#family-btn {
+	top: 45%;
+	left: 23%;
+}
+#killian-btn {
+	top: 55%;
+	left: 60%;
+}
+
+/*part16*/
+#oddroom-btn {
+	top: 8%;
+	left: 55%;
+}
+#value-btn {
+	top: 24%;
+	left: 30%;
+}
+
+/*part17*/
+#inclusivity-btn {
+	top: 82%;
+	left: 25%;
+}
+#distillery-btn {
+	top: 41%;
+	left: 43%;
+}
+
+
+
