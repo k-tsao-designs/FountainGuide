@@ -27,23 +27,7 @@ body {
 }
 
 #ambientnoise {
-	/*display: none;*/
-}
-
-h1 {
-	font-size: 4em;
-	font-weight: 700;
-	color: lightyellow;
-}
-
-h2 {
-	font-size: 2.5em;
-	font-weight: 700;
-}
-
-h6 {
-	font-size: .6em;
-
+	display: none;
 }
 
 .setting {
@@ -72,7 +56,7 @@ h6 {
 .navbtn {
 	border-radius: 50%;
 	position: fixed;
-	color: #422900;
+	color: #94F7FF;
 	font-size: 4em;
 	padding: 0;
 	border: none;
@@ -188,14 +172,60 @@ h6 {
 	transform: rotate(338deg);
 }
 
+h1 {
+	font-size: 4em;
+	font-weight: 700;
+	color: lightyellow;
+}
 
+h2 {
+	font-size: 2.5em;
+	font-weight: 700;
+}
+h3 {
+    font-size: 2.5em;
+    font-weight: 700;
+    display: inline-table;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    -webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+}
+#beeftitle {
+	padding-left: 0;
+}
+h4 {
+	font-size: 2em;
+	font-weight: 700;
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 0;
+}
+
+h6 {
+	font-size: .6em;
+
+}
+
+.profile {
+	position: relative;
+	float: left;
+	width: 80%;
+	margin: 0;
+	padding-right: 10%;
+	padding-left: 10%;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
 /*Info Popups*/
 .infobtn {
 	background-color: white;
 	height: 25px;
 	width: 25px;
 	border: solid 1px lightgrey;
-/*	opacity: .8;*/
+	opacity: .8;
 	position: fixed;
 	border-radius: 50%;
 }
@@ -217,36 +247,72 @@ h6 {
 .infobtn:visited {
 	background-color: #ffd9b3;
 }
+.sidebar {
+	background-color: goldenrod;
+	width: 25%;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	z-index: 3;
+	float: left;
+}
+.profile {
+	position: relative;
+}
+
 .info {
 	display: none;
-	border: solid 10px goldenrod;
-	width: 60%;
+/*	border: solid 10px goldenrod;*/
+	width: 55%;
 	background-color: ivory;
 	color: black;
 	position: absolute;
 	margin-top: 5%;
-	left: 20%;
-	padding: 10px 20px;
+	left: 22%;
 	height: 550px;
 	z-index: 2;
-	overflow: auto;
+}
+.infotext {
+	overflow: scroll;
+    width: 65%;
+    height: 79%;
+    padding: 0px 20px 10px 20px;
+    clear: right;
 }
 .closeinfo {
-	background-color: white;
-	position: absolute;
-	opacity: .7;
-	width: 18px;
-	height: 20px;
-	top: -20px;
-	right: -19px;
-	border-radius: 50%;
-	padding-left: 5px;
-	padding-top: 2px;
+	background-color: goldenrod;
+	position: relative;
+	float: right;
+	opacity: .85;
+    width: 22px;
+    height: 23px;
+    right: -16px;
+    top: -15px;
+    border-radius: 50%;
+    padding-left: 8px;
+    padding-top: 7px;
 	z-index: 3;
+}
+.fa-times {
+	color: black;
+	font-size: 16pt;
+}
+p {
+	margin-top: 0px;
+	margin-bottom: 10px;
 }
 
 .italic {
 	font-style: italic;
+}
+@media (max-width: 1000px) { 
+	.sidebar {
+		display: none;
+	}
+	.infotext {
+		width: 94%;
+		clear: none;
+	}
 }
 
 /*Info button positioning*/

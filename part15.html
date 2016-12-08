@@ -10,8 +10,9 @@
 	<script src="https://use.fontawesome.com/50e050fce0.js"></script>
 </head>
 <body>
-	<audio loop id="ambientnoise" preload="auto">
-		<source src="ambientnoise.mp3" type="audio/mp3">
+	<audio controls autoplay loop id="ambientnoise" preload="auto">
+		<source src="audio/ambientnoise.mp3" type="audio/mp3">
+		<source src="audio/ambientnoise.ogg" type="audio/ogg">
 	</audio>
 
 <!--Screen 15-->
@@ -26,11 +27,16 @@
 			<div class="closeinfo" id="killian-close">
 				<i class="fa fa-times" aria-hidden="true"></i>
 			</div>
-			<h3>Killian</h3>
-			<p>
-				Killian credits the Fountain on Locust with his personal development. He says he was a lost youth when he started working in the kitchen washing dishes, but it provided structure for him during his formative years. He gradually moved his way up to being a server in the front through all the tiers of restaurant service. Now he has a girlfriend, a job, his own apartment, and is even attending grad school!
-
-			</p>
+			<div class="sidebar">
+				<h4>Killian</h4>
+				<img class="profile" src="images/killian.png">
+			</div>
+			<h3>Personal Development</h3>
+			<div class="infotext">
+				<p>
+					Killian credits the Fountain on Locust with his personal development. He says he was a lost youth when he started working in the kitchen washing dishes, but it provided structure for him during his formative years. He gradually moved his way up to being a server in the front through all the tiers of restaurant service. Now he has a girlfriend, a job, his own apartment, and is even attending grad school!
+				</p>
+			</div>
 		</div>
 
 		<div class="infobtn" class="barbbtn" id="family-btn"></div>
@@ -38,10 +44,16 @@
 			<div class="closeinfo" id="family-close">
 				<i class="fa fa-times" aria-hidden="true"></i>
 			</div>
+			<div class="sidebar">
+				<h4>Barbara</h4>
+				<img class="profile" src="images/barbara.png">				
+			</div>
 			<h3>The Fountain Family</h3>
-			<p>
-				Barbara and Killian both emphasized that the Fountain group is like a family. People are there for each other and know how to function as a team so that if one person is overwhelmed another will cover their back. People work here for a surprisingly long time considering the standard restaurant industry turnover is so high. Some managers at the Fountain have been here for 8 years.  A lot of people also keep coming back even after they’ve moved on to other things in their lives and when they drop in just casually start working because by that time they know every job!
-			</p>
+			<div class="infotext">
+				<p>
+					Barbara and Killian both emphasized that the Fountain group is like a family. People are there for each other and know how to function as a team so that if one person is overwhelmed another will cover their back. People work here for a surprisingly long time considering the standard restaurant industry turnover is so high. Some managers at the Fountain have been here for 8 years.  A lot of people also keep coming back even after they’ve moved on to other things in their lives and when they drop in just casually start working because by that time they know every job!
+				</p>
+			</div>
 		</div>
 	</div>
 </div>

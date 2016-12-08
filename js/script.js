@@ -12,7 +12,7 @@ $(document).ready(function() {
 //Open/Close buttons
 	$('#joy-btn').click(function(){
 		$(".info").css({display:"none"})
-		$("#joy-info").css({display:"block"});
+		$("#joy-info, #joy-close").css({display:"block"});
 		// $("info").animate({height:"600px"}, 1500);
 	});
 
